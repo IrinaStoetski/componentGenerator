@@ -7,6 +7,7 @@ const createComponentTemplate = (componentName) => {
 
 	fs.ensureDir(`${componentName}`)
 	.then(() => {
+		console.log(componentName)
 		createComponentFile(componentName);
 		createTestFile(componentName);
 		createStoryFile(componentName);
